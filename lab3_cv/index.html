@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артем Колісник — персональна сторінка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#">Glitch<span>.</span></a>
+        <nav><ul class="nav"><li><a href="#about">Про мене</a></li><li><a href="#skills">Навички</a></li><li><a href="#code">Код</a></li><li><a href="#education">Освіта</a></li><li><a href="#languages">Мови</a></li><li><a href="#projects">Проєкти</a></li></ul></nav>
+        <a class="lang-switch" href="en.html">EN</a>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="avatar">А</div>
+            <h1 class="name">Артем<br>Колісник</h1>
+            <p class="badge">Студент</p>
+            <hr>
+            <ul class="contacts">
+                <li class="contact">
+                    <span class="contact__icon">✉</span>
+                    <div><p class="contact__title">Електронна пошта</p><p class="contact__text">artemgg822@gmail.com</p></div>
+                </li>
+                <li class="contact">
+                    <span class="contact__icon">☎</span>
+                    <div><p class="contact__title">Номер телефону</p><p class="contact__text">+380 XX XXX XX XX</p></div>
+                </li>
+                <li class="contact">
+                    <span class="contact__icon">🎓</span>
+                    <div><p class="contact__title">Група</p><p class="contact__text">585-КБ</p></div>
+                </li>
+                <li class="contact">
+                    <span class="contact__icon">⌂</span>
+                    <div><p class="contact__title">Адреса</p><p class="contact__text">Київ, Україна</p></div>
+                </li>
+            </ul>
+            <hr>
+            <div class="social">
+                <a href="https://github.com/GodsFlower" title="GitHub">GitHub</a>
+                <a href="https://t.me/" title="Telegram">Telegram</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="about">
+                <h2 class="section-title">Про мене</h2>
+                <p>Студент 4 курсу спеціальності «Кібербезпека». Цікавлюся захистом інформації, web-технологіями та тим, як працюють системи зсередини — хочу поєднати безпеку і розробку.</p>
+            </section>
+
+            <section id="skills">
+                <h2 class="section-title">Навички</h2>
+                <ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Git / GitHub</li><li>Linux</li><li>Wireshark</li><li>VS Code</li></ul>
+            </section>
+
+            <section id="code">
+                <h2 class="section-title">Приклад коду</h2>
+                <pre class="code"><code><span class="k">form</span>.addEventListener(<span class="s">'submit'</span>, (event) => {
+    event.preventDefault();
+    <span class="c">// перебір кожної літери імені</span>
+    <span class="k">for</span> (<span class="k">const</span> letter <span class="k">of</span> name) {
+        console.log(letter);
+    }
+});</code></pre>
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">Освіта</h2>
+                <ul class="timeline">
+                <li class="timeline__item">
+                    <h3>Фаховий коледж «КАІ ТЕХ» Національного університету «Київський авіаційний інститут»</h3><p>Спеціальність «Кібербезпека», група 585-КБ</p><span>2022 — 2026</span>
+                </li>
+                <li class="timeline__item">
+                    <h3>Самоосвіта</h3><p>HTML, CSS, JavaScript, основи Linux</p><span>2024 — зараз</span>
+                </li>
+                </ul>
+            </section>
+
+            <section id="languages">
+                <h2 class="section-title">Мови</h2>
+                <ul class="langs">
+                <li class="lang">
+                    <div class="lang__row"><span>Українська</span><span class="lang__level">рідна</span></div>
+                    <div class="lang__bar"><div style="width:100%"></div></div>
+                </li>
+                <li class="lang">
+                    <div class="lang__row"><span>Російська</span><span class="lang__level">вільно</span></div>
+                    <div class="lang__bar"><div style="width:95%"></div></div>
+                </li>
+                <li class="lang">
+                    <div class="lang__row"><span>Англійська</span><span class="lang__level">B1</span></div>
+                    <div class="lang__bar"><div style="width:60%"></div></div>
+                </li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2 class="section-title">Проєкти</h2>
+                <div class="projects">
+                <a class="project" href="../lab1_login_form/index.html">
+                    <img src="img/login1.png" alt="Login Form">
+                    <h3>Login Form</h3><p>HTML + CSS, форма входу з показом пароля</p>
+                </a>
+                <a class="project" href="../lab2_login_form_js/index.html">
+                    <img src="img/login2.png" alt="Login Form JS">
+                    <h3>Login Form JS</h3><p>Модульний JavaScript, pop-up з літерами імені</p>
+                </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

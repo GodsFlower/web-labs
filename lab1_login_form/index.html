@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <form class="login-form" id="loginForm">
+            <h1 class="title">Login</h1>
+
+            <fieldset class="group">
+                <legend>Personal Information</legend>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Артем" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Колісник" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+                <label class="show-pass">
+                    <input type="checkbox" id="showPassword">
+                    Show password
+                </label>
+            </fieldset>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

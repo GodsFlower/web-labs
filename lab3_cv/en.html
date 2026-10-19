@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Kolisnyk — personal page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#">Glitch<span>.</span></a>
+        <nav><ul class="nav"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#code">Code</a></li><li><a href="#education">Education</a></li><li><a href="#languages">Languages</a></li><li><a href="#projects">Projects</a></li></ul></nav>
+        <a class="lang-switch" href="index.html">UA</a>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="avatar">А</div>
+            <h1 class="name">Artem<br>Kolisnyk</h1>
+            <p class="badge">Student</p>
+            <hr>
+            <ul class="contacts">
+                <li class="contact">
+                    <span class="contact__icon">✉</span>
+                    <div><p class="contact__title">Email</p><p class="contact__text">artemgg822@gmail.com</p></div>
+                </li>
+                <li class="contact">
+                    <span class="contact__icon">☎</span>
+                    <div><p class="contact__title">Phone</p><p class="contact__text">+380 XX XXX XX XX</p></div>
+                </li>
+                <li class="contact">
+                    <span class="contact__icon">🎓</span>
+                    <div><p class="contact__title">Group</p><p class="contact__text">585-KB</p></div>
+                </li>
+                <li class="contact">
+                    <span class="contact__icon">⌂</span>
+                    <div><p class="contact__title">Address</p><p class="contact__text">Kyiv, Ukraine</p></div>
+                </li>
+            </ul>
+            <hr>
+            <div class="social">
+                <a href="https://github.com/GodsFlower" title="GitHub">GitHub</a>
+                <a href="https://t.me/" title="Telegram">Telegram</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="about">
+                <h2 class="section-title">About me</h2>
+                <p>4th-year Cybersecurity student. I'm interested in information security, web technologies and how systems work under the hood — I want to combine security and development.</p>
+            </section>
+
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Git / GitHub</li><li>Linux</li><li>Wireshark</li><li>VS Code</li></ul>
+            </section>
+
+            <section id="code">
+                <h2 class="section-title">Code example</h2>
+                <pre class="code"><code><span class="k">form</span>.addEventListener(<span class="s">'submit'</span>, (event) => {
+    event.preventDefault();
+    <span class="c">// перебір кожної літери імені</span>
+    <span class="k">for</span> (<span class="k">const</span> letter <span class="k">of</span> name) {
+        console.log(letter);
+    }
+});</code></pre>
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="timeline">
+                <li class="timeline__item">
+                    <h3>Professional College «KAI TECH» of the National University «Kyiv Aviation Institute»</h3><p>Cybersecurity, group 585-KB</p><span>2022 — 2026</span>
+                </li>
+                <li class="timeline__item">
+                    <h3>Self-education</h3><p>HTML, CSS, JavaScript, Linux basics</p><span>2024 — now</span>
+                </li>
+                </ul>
+            </section>
+
+            <section id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="langs">
+                <li class="lang">
+                    <div class="lang__row"><span>Ukrainian</span><span class="lang__level">native</span></div>
+                    <div class="lang__bar"><div style="width:100%"></div></div>
+                </li>
+                <li class="lang">
+                    <div class="lang__row"><span>Russian</span><span class="lang__level">fluent</span></div>
+                    <div class="lang__bar"><div style="width:95%"></div></div>
+                </li>
+                <li class="lang">
+                    <div class="lang__row"><span>English</span><span class="lang__level">B1</span></div>
+                    <div class="lang__bar"><div style="width:60%"></div></div>
+                </li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects">
+                <a class="project" href="../lab1_login_form/index.html">
+                    <img src="img/login1.png" alt="Login Form">
+                    <h3>Login Form</h3><p>HTML + CSS login form with show-password</p>
+                </a>
+                <a class="project" href="../lab2_login_form_js/index.html">
+                    <img src="img/login2.png" alt="Login Form JS">
+                    <h3>Login Form JS</h3><p>Modular JavaScript, pop-up with name letters</p>
+                </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
